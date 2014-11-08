@@ -78,15 +78,17 @@
         </section>
 
         <section>
-          <h1>wikichanges</h1>
-          <pre>
-            <code class="javascript">
-            var wikichanges = require('wikichanges');
+          <h3><a href="http://github.com/edsu/wikichanges">github.com/edsu/wikichanges</a></h3>
+          <pre style="background-color: #111111; font-size: 25pt;">
+            <code data-trim class="javascript" style="background-color: #111111;;">
 
-            var changes = new wikichanges.Wikichanges()
-            changes.listen(function(change) {
-              console.log(change.page + " " + change.pageUrl);
-            });
+var wikichanges = require('wikichanges');
+
+var changes = new wikichanges.Wikichanges()
+
+changes.listen(function(change) {
+  // do stuff with the change
+});
             </code>
           </pre>
 
@@ -163,7 +165,7 @@
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+        center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
