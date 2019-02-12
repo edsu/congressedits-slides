@@ -46,10 +46,6 @@
 			<div class="slides">
 				<section>
 					<h1>@congressedits</h1>
-          <h3>Wikipedia + Twitter + Congress = ?</h3>
-          <p>
-						<a href="http://inkdroid.org">Ed Summers</a> / <a href="http://twitter.com/edsu">@edsu</a>
-					</p>
 				</section>
 
         <section data-background="img/parliamentedits.png">
@@ -73,12 +69,10 @@
           </p>
         </section>
 
-        <section>
-          <h1>wikistream</h1>
+        <section data-background="img/wikistream.png">
         </section>
 
         <section>
-          <h1>wikichanges</h1>
           <pre>
             <code class="javascript">
             var wikichanges = require('wikichanges');
@@ -90,6 +84,9 @@
             </code>
           </pre>
 
+          <p>
+          And now there's Wikipedia's <a href="https://wikitech.wikimedia.org/wiki/EventStreams">EventStreams</a>.
+          </p>
         </section>
 
         <section data-background="img/rum.png">
@@ -138,6 +135,22 @@
         </section>
 
         <section>
+          <a href="https://twitter.com/pbump/status/922823194297491456" target="_new"><img width="80%" src="img/resist.png"></a>
+        </section>
+
+        <section>
+          <a href="https://www.washingtonpost.com/politics/2018/09/28/fight-over-kavanaugh-nomination-finds-its-oddest-front-yet-wikipedia-pages/"><img src="img/kavanaugh.png"></a>
+        </section>
+
+        <section>
+          <a href="https://github.com/edsu/congressedits-archive/"><img src="img/archive.png"</a>
+        </section>
+
+        <section>
+          <a href="https://botsin.space/@congressedits"><img src="img/mastodon.png"></a>
+        </section>
+
+        <section>
         <h2>Questions/Feedback</h2>
         <ul>
           <li><a
@@ -160,13 +173,13 @@
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
+				controls: false,
+				progress: false,
 				history: true,
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear' || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
